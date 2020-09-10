@@ -61,7 +61,7 @@ Before you get started, please take a few minutes and get acquainted with this a
 - In the value prop we'll pass in the products state, and an addItem function that will allow us to add books to the cart.
 
 ```js
-<ProductContext.Provider value={{ products, addItem }}>
+
 ```
 
 - Now that we're providing our products state and addItem function we can simplify our products route a bit.
@@ -90,7 +90,8 @@ Before you get started, please take a few minutes and get acquainted with this a
 
 - In the component, call the `useContext` hook and pass in the context object we want to use into it.
 
-- When we do this, `useContext` is going to return value passed by our `ProductContext` Provider `value` prop. In our case we're getting back an object with two properties. A `products` property and a `addItem` property. We can go ahead and destructure those.
+- When we do this, `useContext` is going to return value passed by our `ProductContext` Provider `value` prop. 
+In our case we're getting back an object with two properties. A `products` property and a `addItem` property. We can go ahead and destructure those.
 
 ```js
 const { products, addItem } = useContext(ProductContext);
